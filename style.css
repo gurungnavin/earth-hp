@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(./img/main.png);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+nav .logo {
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 18px;
+}
+
+.header-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 16px;
+   margin-top: 60px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    color: var(--primary-dark);
+    font-weight: 500;
+}
+.header-content p {
+    font-size: 40px;
+    color: var(--primary-dark);
+}
+
+.primary-btn {
+    padding: 10px 24px;
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* ==============   SERVICES   ===================  */
+
+#services {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+}
+
+.service {
+    width: 300px;
+}
+.service h1 {
+    font-weight: 500;
+    margin: 12px 0;
+}
+.service p {
+    color: gray;
+    font-size: 14px;
+}
+
+.service img {
+    max-width: 100%;
+}
+
+
+/* ==============   ABOUT   ===================  */
+
+#about {
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h1 {
+    font-size: 32px;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#about img {
+    max-width: 100%;
+}
+
+
+/* ==============   TALK TO US   ===================  */
+
+#talk-to-us {
+    background-image: url(./img/talk-to-us.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    margin-top: 120px;
+}
+
+.talk-to-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.talk-to-us-content h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.talk-to-us-content p {
+    max-width: 600px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.talk-to-us-content .secondary-btn {
+    padding:10px 22px;
+    border: none;
+    background-color: var(--primary-light);
+    color: var(--white);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.talk-to-us-content .secondary-btn:hover {
+    background-color: var(--primary-dark);
+}
+footer {
+    background-color: var(--white);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+
+
+
+
